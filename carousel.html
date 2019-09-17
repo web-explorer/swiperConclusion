@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>carousel</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0">
+	<link rel="stylesheet" type="text/css" href="css/swiper.css">
+	<style type="text/css">
+		html {
+			height: 100%;
+		}
+		body {
+			height: 100%;
+			margin: 0;
+		}
+		/*
+	    在不自定义.swiper-container的宽度情况下，其宽度由其父元素决定
+	    */
+	    /*
+	    当轮播图片的宽度大于.swiper-container的宽度时，需要给轮播图片设置如下样式
+	    */
+		a.swiper-slide>img {
+			width: 100%;
+		}
+		/*
+	    当轮播图片的宽度小于.swiper-container的宽度时，需要手动添加css使.swiper-container的宽度等于轮播图片的宽度
+	    */
+	</style>
+</head>
+<body>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+    	<a class="swiper-slide" href="javascript:;">
+    		<img src="images/p1.jpg">
+    	</a>
+    	<a class="swiper-slide" href="javascript:;">
+    		<img src="images/p2.jpg">
+    	</a>
+    	<a class="swiper-slide" href="javascript:;">
+    		<img src="images/p3.jpg">
+    	</a>
+    </div>
+
+    <div class="swiper-pagination"></div>
+
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+<script type="text/javascript" src="js/swiper.js"></script>
+<script type="text/javascript">
+	var swiper = new Swiper('.swiper-container', {
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+</script>
+</body>
+</html>
