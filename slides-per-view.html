@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>slides-per-view</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0">
+	<link rel="stylesheet" type="text/css" href="css/swiper.css">
+	<style type="text/css">
+	.hide-text-with-dots {
+		text-overflow: ellipsis;
+		-webkit-line-clamp: 2; /* 设置超出多少行隐藏 */
+		-webkit-box-orient: vertical;
+       	display: -webkit-box; /* 设置 display 为 -webkit-box 或者 -webkit-inline-box 时为隐藏状态 */
+	}
+	* {
+		box-sizing: border-box;
+	}
+	html {
+      	height: 100%;
+    }
+    body {
+    	height: 100%;
+  		margin: 0;
+    }
+    .swiper-container {
+    	padding: 0 6px;
+    }
+    .swiper-wrapper {
+
+    }
+    .swiper-slide {
+    	padding: 6px;
+    }
+    .swiper-slide>a {
+    	width: 100%;
+    	padding: 6px;
+    	border: 1px solid #E4E7ED;
+    	border-radius: 5px;
+    	text-decoration: none;
+    	display: flex;
+    	flex-direction: column;
+    	align-items: center;
+    }
+    .swiper-slide>a>img {
+    	width: 90px;
+    	height: 90px;
+    }
+    .swiper-slide>a>h3 {
+    	font-size: 13px;
+    	line-height: 18px;
+    	height: 36px;
+    	overflow: hidden;
+    	margin-top: 8px;
+    	margin-bottom: 0;
+    	color: #000;
+    	text-align: center;
+    }
+    .swiper-slide>a>p {
+    	font-size: 12px;
+    	margin-top: 8px;
+    	margin-bottom: 0;
+    	color: #f00;
+    }
+	</style>
+</head>
+<body>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+      	<a href="javascript:;">
+      		<img src="images/bao.jpg">
+      		<h3 class="hide-text-with-dots" title="力开力朗(LOCAL LION) 登山包户外背包旅行背包 多功能运动双肩背包 经典款065黑 45L">力开力朗(LOCAL LION) 登山包户外背包旅行背包 多功能运动双肩背包 经典款065黑 45L</h3>
+      		<p>
+      			<span>销售价：</span>
+      			<span>￥</span>
+      			<span>107.00</span>
+      		</p>
+      	</a>
+      </div>
+      <div class="swiper-slide">
+      	<a href="javascript:;">
+      		<img src="images/lingshi.jpg">
+      		<h3 class="hide-text-with-dots">三只松鼠休闲零食天津风味美食小吃小麻花黑糖味俏蛮腰麻花112g/袋</h3>
+      		<p>
+      			<span>销售价：</span>
+      			<span>￥</span>
+      			<span>13.80</span>
+      		</p>
+      	</a>
+      </div>
+      <div class="swiper-slide">
+      	<a href="javascript:;">
+      		<img src="images/xiaomishouji.jpg">
+      		<h3 class="hide-text-with-dots">小米9se 幻彩蓝</h3>
+      		<p>
+      			<span>销售价：</span>
+      			<span>￥</span>
+      			<span>3,007.00</span>
+      		</p>
+      	</a>
+      </div>
+      <div class="swiper-slide">
+      	<a href="javascript:;">
+      		<img src="images/xifalu.jpg">
+      		<h3 class="hide-text-with-dots">沙宣去屑洗发水水润去屑750ml</h3>
+      		<p>
+      			<span>销售价：</span>
+      			<span>￥</span>
+      			<span>71.50</span>
+      		</p>
+      	</a>
+      </div>
+      <div class="swiper-slide">
+      	<a href="javascript:;">
+      		<img src="images/xiyiye.jpg">
+      		<h3 class="hide-text-with-dots">蓝月亮 深层洁净洗衣液（薰衣草）1kg/瓶</h3>
+      		<p>
+      			<span>销售价：</span>
+      			<span>￥</span>
+      			<span>27.80</span>
+      		</p>
+      	</a>
+      </div>
+    </div>
+  </div>
+
+<script type="text/javascript" src="js/swiper.js"></script>
+<script type="text/javascript">
+	var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 2.5
+    });
+</script>
+</body>
+</html>
